@@ -1,0 +1,2 @@
+rootProject.name='SmartCane'
+include ':app'

@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">SmartCane</string>
+
+
+    <string name="map_key" translatable="false">AIzaSyB_qsP8AOP_P0MdlPz-48TDaJYjTP3vbjo</string>
+
+
+    <string name="dashboard">Dashboard</string>
+    <string name="home">Home</string>
+    <string name="about">About</string>
+    <string name="map">Map</string>
+    <string name="profile">Profile</string>
+    <string name="contact">Contact</string>
+    <string name="emergency">Emergency</string>
+    <string name="sms">sms</string>
+
+
+    <string-array name="names">
+        <item>Select your gender : </item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string name="One">TextView1</string>
+    <string name="Two">TextView2</string>
+    <string name="Three">TextView3</string>
+    <string name="Swipe">swipe right</string>
+    <string name="Get">Get Started</string>
+    <string name="alert">Alert</string>
+
+</resources>

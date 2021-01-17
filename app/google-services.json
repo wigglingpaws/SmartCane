@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "485315486154",
+    "firebase_url": "https://smartcane-426e9.firebaseio.com",
+    "project_id": "smartcane-426e9",
+    "storage_bucket": "smartcane-426e9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:485315486154:android:6cc6a33357d0218c512f33",
+        "android_client_info": {
+          "package_name": "com.example.smartcane"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "485315486154-ng940udaomnidu9hr1nndcvap8fegqol.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.smartcane",
+            "certificate_hash": "9aa95c43bf1598c397830038f239248b61b618a8"
+          }
+        },
+        {
+          "client_id": "485315486154-smtba4js9nkvubheseudkj6581r5lj96.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClZNCxBCgfA5SSM-wnBbTwrPX4rws4aGI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "485315486154-smtba4js9nkvubheseudkj6581r5lj96.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
