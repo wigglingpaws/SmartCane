@@ -66,21 +66,16 @@ public class Profile extends AppCompatActivity implements LocationListener {
     private ProgressDialog progressDialog;
     private LocationManager locationManager;
 
-    //permission constants
     private static final int LOCATION_REQUEST_CODE = 100;
     private static final int CAMERA_REQUEST_CODE = 200;
     private static final int STORAGE_REQUEST_CODE = 300;
-
-    //image pick constants
     private static final int IMAGE_PICK_GALLERY_CODE = 400;
     private static final int IMAGE_PICK_CAMERA_CODE = 500;
 
-    //permission arrays
     private String[] locationPermissions;
     private String[] cameraPermissions;
     private String[] storagePermission;
 
-    //image Uri
     private Uri image_uri;
 
     private double latitude = 0.0;
@@ -155,9 +150,7 @@ public class Profile extends AppCompatActivity implements LocationListener {
         progressDialog.setCanceledOnTouchOutside(false);
         firebaseAuth = FirebaseAuth.getInstance();
         checkUser();
-
-
-        //init permission arrays
+        
         locationPermissions = new String[]{Manifest.permission.ACCESS_FINE_LOCATION};
         cameraPermissions = new String[]{Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE};
         storagePermission = new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE};
