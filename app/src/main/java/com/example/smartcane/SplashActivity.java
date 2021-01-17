@@ -39,12 +39,12 @@ public class SplashActivity extends AppCompatActivity {
             public void run() {
                 FirebaseUser user = firebaseAuth.getCurrentUser();
                 if (user==null){
-                    //user not logged in start login activity
+                   
                     startActivity(new Intent( SplashActivity.this, Onboarding.class));
                     finish();
                 }
                 else{
-                    //user is logged in, check user type
+                   
                     checkUserType();
                 }
             }
@@ -55,8 +55,6 @@ public class SplashActivity extends AppCompatActivity {
 
 
     private void checkUserType() {
-        //if user is seller, start seller main screen
-        //if user is buyer, start user main screen
 
         DatabaseReference ref = FirebaseDatabase.getInstance().getReference("Users");
         ref.orderByChild("uid").equalTo(firebaseAuth.getUid())
@@ -66,12 +64,11 @@ public class SplashActivity extends AppCompatActivity {
                         for (DataSnapshot ds: dataSnapshot.getChildren()){
                             String accountType = ""+ds.child("accountType").getValue();
                             if (accountType.equals("Seller")){
-                                //user is seller
                                 startActivity(new Intent(SplashActivity.this, Onboarding.class));
                                 finish();
                             }
                             else {
-                                //user is buyer
+                                
                                 startActivity(new Intent(SplashActivity.this, Onboarding.class));
                                 finish();
 
