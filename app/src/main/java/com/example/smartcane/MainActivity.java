@@ -133,7 +133,7 @@ public class MainActivity extends AppCompatActivity {
                         new String[]{Manifest.permission.READ_CALL_LOG}, 1);
             }
         } else {
-            //do stuff
+     
             TextView textView = (TextView) findViewById(R.id.textView);
             textView.setText(getCallDetails());
         }
@@ -185,11 +185,7 @@ public class MainActivity extends AppCompatActivity {
         smsListView.setAdapter(arrayAdapter);
 
 
-        // Add SMS Read Permision At Runtime
-        // Todo : If Permission Is Not GRANTED
         if (ContextCompat.checkSelfPermission(getBaseContext(), "android.permission.READ_SMS") == PackageManager.PERMISSION_GRANTED) {
-
-            // Todo : If Permission Granted Then Show SMS
             refreshSmsInbox();
 
         } else {
@@ -293,7 +289,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void makeMeOffline() {
-        //after logging in, make user online
+      
         progressDialog.setMessage("Logging out..");
 
         HashMap<String, Object> hashMap = new HashMap<>();
